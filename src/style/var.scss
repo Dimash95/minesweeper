@@ -1,0 +1,102 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-weight: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 80%;
+
+  .desk {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: red;
+    text-align: center;
+  }
+  .minesweeper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.mins {
+  width: 70px;
+}
+.reset {
+  width: 70px;
+  cursor: pointer;
+
+  .smile {
+    text-decoration: none;
+    font-size: 30px;
+  }
+}
+.timer {
+  width: 70px;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+}
+button {
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(165, 163, 163);
+}
+.opened {
+  background-color: rgb(212, 208, 208);
+}
+.one {
+  color: blue;
+}
+.two {
+  color: green;
+}
+.three {
+  color: red;
+}
+.four {
+  color: yellow;
+}
+.click {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .field {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+  }
+
+  button {
+    height: 30px;
+    // width: 20px;
+  }
+}
